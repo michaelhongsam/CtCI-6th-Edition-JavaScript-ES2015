@@ -1,21 +1,9 @@
 {
   "rules": {
-    "indent": [
-      2,
-      2
-    ],
-    "quotes": [
-      2,
-      "single"
-    ],
-    "linebreak-style": [
-      2,
-      "unix"
-    ],
-    "semi": [
-      2,
-      "always"
-    ],
+    "indent": [2, 2],
+    "quotes": [2, "single"],
+    "linebreak-style": [2, "unix"],
+    "semi": [2, "always"],
     "eqeqeq": 2
   },
   "env": {
@@ -27,5 +15,12 @@
   "ecmaFeatures": {
     "modules": true
   },
-  "extends": "eslint:recommended"
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
 }
